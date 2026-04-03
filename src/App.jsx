@@ -11,6 +11,8 @@ import AjayHighlight from './components/AjayHighlight';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
 import CTASection from './components/CTASection';
+import AboutShort from './components/AboutShort';
+import RecentResultsBanner from './components/RecentResultsBanner';
 import ContactPreview from './components/ContactPreview';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -56,6 +58,8 @@ const HomePage = () => (
   <>
     <Hero />
     <TrustStrip />
+    <AboutShort />
+    <RecentResultsBanner />
     <Courses />
     <WhyPrayas />
     <Faculty />

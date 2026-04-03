@@ -13,15 +13,14 @@ import {
     Quote,
     Download,
     Eye,
-    ShieldCheck
+    GraduationCap
 } from 'lucide-react';
 
 const AjaySinghPage = () => {
     const authorityStats = [
-        { label: 'Books Authored', value: '200+', icon: <BookOpen /> },
-        { label: 'Success Stories', value: '50,000+', icon: <Users /> },
-        { label: 'Years Experience', value: '20+', icon: <Award /> },
-        { label: 'Ex-Chief Editor', value: 'Arihant', icon: <ShieldCheck /> }
+        { label: 'Experience', value: '25+ Years', icon: <GraduationCap /> },
+        { label: 'Books Written', value: '15+ Titles', icon: <BookOpen /> },
+        { label: 'Students Helped', value: '1M+', icon: <Users /> }
     ];
 
     const trinityBooks = [
@@ -44,7 +43,7 @@ const AjaySinghPage = () => {
 
     return (
         <div style={{ backgroundColor: 'white', overflowX: 'hidden' }}>
-            <SEO 
+            <SEO
                 title="Ajay Kumar Singh | Expert English Mentor in Patna"
                 description="Learn from Ajay Kumar Singh, the renowned English mentor and author of 200+ books. Expert guidance for SSC, Banking & competitive exams in Patna."
             />

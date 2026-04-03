@@ -41,7 +41,7 @@ const AboutPage = () => {
 
     return (
         <div style={{ backgroundColor: 'white', overflowX: 'hidden' }}>
-            <SEO 
+            <SEO
                 title="About Prayas Classes | SSC & Banking Coaching in Patna"
                 description="Know more about Prayas Classes, a trusted coaching institute in Patna with experienced faculty and a strong track record in SSC & Banking preparation."
             />
@@ -402,7 +402,7 @@ const AboutPage = () => {
                                     zIndex: 2
                                 }}>
                                     <Quote size={32} opacity={0.5} />
-                                    <div style={{ fontSize: '1.25rem', fontWeight: '900', marginTop: '10px' }}>Ex-Chief Editor <br /> Arihant</div>
+                                    <div style={{ fontSize: '1.25rem', fontWeight: '900', marginTop: '10px' }}>Founder & MD <br /> MB Books</div>
                                 </div>
                             </div>
                         </motion.div>
@@ -418,9 +418,9 @@ const AboutPage = () => {
                                 A Legacy of Excellence in <br />
                                 <span style={{ color: 'var(--accent-saffron)' }}>Competitive English</span>
                             </h2>
-                            
+
                             <p style={{ fontSize: '1.15rem', color: 'var(--text-main)', lineHeight: '1.8', marginBottom: '32px' }}>
-                                Ajay Kumar Singh is a renowned English mentor for competitive exams, with a legacy spanning over two decades. As the Founder & Managing Director of MB Books Pvt. Ltd. and former Chief Editor at Arihant Publications, he has played a key role in shaping English preparation for thousands of aspirants across India.
+                                Ajay Kumar Singh is a renowned English mentor for competitive exams, with a legacy spanning over two decades. As the Founder & Managing Director of MB Books Pvt. Ltd., he has played a key role in shaping English preparation for thousands of aspirants across India.
                             </p>
 
                             {/* Authority Block Grid */}
@@ -429,7 +429,7 @@ const AboutPage = () => {
                                     { icon: <BookOpen />, title: '200+', label: 'Books Authored' },
                                     { icon: <Users />, title: '50k+', label: 'Student Selections' },
                                     { icon: <Award />, title: '20+', label: 'Years Experience' },
-                                    { icon: <ShieldCheck />, title: 'Arihant', label: 'Ex-Chief Editor' }
+                                    { icon: <ShieldCheck />, title: 'MB Books', label: 'Founder & MD' }
                                 ].map((stat, idx) => (
                                     <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                                         <div style={{ width: '48px', height: '48px', borderRadius: '12px', backgroundColor: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-saffron)', boxShadow: 'var(--shadow-sm)' }}>

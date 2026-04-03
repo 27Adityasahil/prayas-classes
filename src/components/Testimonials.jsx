@@ -28,53 +28,65 @@ const Testimonials = () => {
                     </motion.div>
                 </div>
 
-                <div className="grid-cols-3" style={{ gap: '32px' }}>
-                    {[
-                        { name: 'Rahul Kumar', role: 'SSC CGL Inspector', text: 'Prayas Classes gave me the strategic roadmap I needed. अजय सर की क्लासेस ने मेरा नजरिया बदल दिया।' },
-                        { name: 'Anjali Sharma', role: 'SBI PO Officer', text: 'The focus on basic concepts is what sets Prayas apart. Truly the best in Patna for banking aspirants.' },
-                        { name: 'Vikash Singh', role: 'Income Tax Officer', text: 'सफलता के लिए सही मार्गदर्शन जरूरी है, और प्रयास क्लासेज वही प्रदान करता है। Unmatched attention to detail.' }
-                    ].map((review, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: i * 0.1 }}
-                            style={{
-                                padding: '48px',
-                                backgroundColor: 'var(--surface-muted)',
-                                borderRadius: '32px',
-                                position: 'relative',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                border: '1px solid var(--border-gold)',
-                                boxShadow: '0 10px 30px rgba(0,0,0,0.03)'
-                            }}
-                        >
-                            <Quote size={60} color="var(--accent-saffron)" opacity={0.08} style={{ position: 'absolute', top: '24px', left: '24px' }} />
+                <div style={{
+                    overflow: 'hidden',
+                    padding: '20px 0',
+                    margin: '0 -20px'
+                }}>
+                    <motion.div
+                        animate={{
+                            x: [0, "-50%"]
+                        }}
+                        transition={{
+                            x: {
+                                repeat: Infinity,
+                                repeatType: "loop",
+                                duration: 25,
+                                ease: "linear",
+                            },
+                        }}
+                        style={{
+                            display: 'flex',
+                            gap: '32px',
+                            width: 'max-content'
+                        }}
+                        whileHover={{ scale: 1 }} // Placeholder to stop if needed, but linear x animation is best left running or using a state.
+                    >
+                        {[...reviews, ...reviews].map((review, i) => (
+                            <div
+                                key={i}
+                                style={{
+                                    width: '400px',
+                                    padding: '40px',
+                                    backgroundColor: 'white',
+                                    borderRadius: '32px',
+                                    position: 'relative',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    border: '1px solid var(--border-gold)',
+                                    boxShadow: '0 10px 30px rgba(0,0,0,0.03)',
+                                    flexShrink: 0
+                                }}
+                            >
+                                <Quote size={40} color="var(--accent-saffron)" opacity={0.1} style={{ position: 'absolute', top: '24px', right: '24px' }} />
 
-                            <div style={{ display: 'flex', gap: '4px', marginBottom: '24px', position: 'relative' }}>
-                                {[1, 2, 3, 4, 5].map(s => <Star key={s} size={16} fill="var(--accent-gold)" color="var(--accent-gold)" />)}
+                                <div style={{ display: 'flex', gap: '4px', marginBottom: '20px' }}>
+                                    {[1, 2, 3, 4, 5].map(s => <Star key={s} size={14} fill="var(--accent-gold)" color="var(--accent-gold)" />)}
+                                </div>
+
+                                <p style={{ fontSize: '1rem', color: 'var(--text-main)', lineHeight: '1.7', marginBottom: '32px', fontStyle: 'italic', flexGrow: 1 }}>
+                                    "{review.text}"
+                                </p>
+
+                                <div>
+                                    <h4 style={{ fontSize: '1.25rem', color: 'var(--primary)', marginBottom: '4px', fontWeight: '800' }}>{review.name}</h4>
+                                    <p style={{ fontSize: '0.75rem', fontWeight: '800', color: 'var(--accent-saffron)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{review.role}</p>
+                                </div>
                             </div>
-
-                            <p style={{ fontSize: '1.1rem', color: 'var(--text-main)', lineHeight: '1.8', marginBottom: '40px', fontStyle: 'italic', flexGrow: 1, position: 'relative' }}>
-                                "{review.text}"
-                            </p>
-
-                            <div style={{ position: 'relative' }}>
-                                <h4 className="font-script" style={{ fontSize: '1.5rem', color: 'var(--primary)', marginBottom: '4px' }}>{review.name}</h4>
-                                <p style={{ fontSize: '0.8rem', fontWeight: '800', color: 'var(--accent-saffron)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{review.role}</p>
-                            </div>
-                        </motion.div>
-                    ))}
+                        ))}
+                    </motion.div>
                 </div>
             </div>
-
-            <style>{`
-                @media (max-width: 991px) {
-                    .grid-cols-3 { grid-template-columns: 1fr !important; }
-                }
-            `}</style>
         </section>
     );
 };

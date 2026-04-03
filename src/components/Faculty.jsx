@@ -6,8 +6,9 @@ const Faculty = () => {
     const facultyList = [
         { name: 'Ajay Kr Singh', subject: 'English Language', exp: '20+ Years', role: 'Chief Mentor', image: '/assets/pictures/webp/t-3.webp' },
         { name: 'Panna Lal', subject: 'Mathematics', exp: '15+ Years', role: 'Senior Faculty', image: '/assets/pictures/webp/t-2.webp' },
-        { name: 'Bhanu Sir', subject: 'General Studies', exp: '12+ Years', role: 'GS Expert', image: '/assets/pictures/webp/t-1.webp' },
         { name: 'Saroj Sir', subject: 'Reasoning', exp: '10+ Years', role: 'Logical Specialist', image: '/assets/pictures/webp/t-4.webp' },
+        { name: 'Bhanu Sir', subject: 'General Studies', exp: '12+ Years', role: 'GS Expert', image: '/assets/pictures/webp/t-1.webp' },
+        
     ];
 
     return (

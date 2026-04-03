@@ -16,10 +16,10 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '32px' }}>
-              <div style={{ width: '44px', height: '44px', backgroundColor: 'white', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
-                <span style={{ fontWeight: '900', fontSize: '1.25rem' }}>P</span>
-              </div>
-              <span style={{ fontWeight: '900', fontSize: '1.5rem', letterSpacing: '-0.02em' }}>PRAYAS <span style={{ color: 'var(--secondary-light)' }}>CLASSES</span></span>
+              <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '16px', textDecoration: 'none' }}>
+                <img src="/logo.png" alt="Prayas Classes" style={{ height: '60px', width: 'auto', display: 'block' }} />
+                <span style={{ fontWeight: '900', fontSize: '1.5rem', letterSpacing: '-0.02em', color: 'white' }}>PRAYAS <span style={{ color: 'var(--accent-gold)' }}>CLASSES</span></span>
+              </Link>
             </div>
             <p style={{ color: 'rgba(255, 255, 255, 0.6)', lineHeight: '1.8', marginBottom: '32px', fontSize: '0.95rem' }}>
               Patna's most trusted name in government exam preparation. We focus on concept-based learning to turn aspirants into successful officers.
@@ -64,15 +64,15 @@ const Footer = () => {
             <h4 style={{ fontWeight: '900', marginBottom: '32px', fontSize: '1.1rem', letterSpacing: '0.05em' }}>CONTACT</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
               <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                <MapPin size={20} color="var(--secondary-light)" style={{ flexShrink: 0 }} />
+                <MapPin size={20} color="var(--accent-gold)" style={{ flexShrink: 0 }} />
                 <span style={{ color: 'rgba(255, 255, 255, 0.6)', lineHeight: '1.6', fontSize: '0.9rem' }}>Jagdamba Tower, Boring Road, Patna, Bihar</span>
               </div>
               <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-                <Phone size={20} color="var(--secondary-light)" style={{ flexShrink: 0 }} />
+                <Phone size={20} color="var(--accent-gold)" style={{ flexShrink: 0 }} />
                 <a href="tel:09973595162" style={{ color: 'white', textDecoration: 'none', fontWeight: '700' }}>99735 95162</a>
               </div>
               <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-                <MessageCircle size={20} color="var(--secondary-light)" style={{ flexShrink: 0 }} />
+                <MessageCircle size={20} color="var(--accent-gold)" style={{ flexShrink: 0 }} />
                 <a href="https://wa.me/919973595162" style={{ color: 'white', textDecoration: 'none', fontWeight: '700' }}>WhatsApp Support</a>
               </div>
             </div>
@@ -83,12 +83,12 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div style={{ padding: '40px 0 0', borderTop: '1px solid rgba(255, 255, 255, 0.05)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: 'rgba(255, 255, 255, 0.4)', fontSize: '0.8rem' }}>
           <p>© 2024 Prayas Classes Patna. All Rights Reserved.</p>
-          <p>Designed for Excellence</p>
+          <p>Designed and Developed by <a href="https://brandorbitt.in" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255, 255, 255, 0.6)', fontWeight: '700', textDecoration: 'none' }}>BrandOrbit</a></p>
         </div>
       </div>
 
       <style>{`
-                a:hover { color: white !important; transform: translateX(5px); }
+                footer a:hover { color: white !important; transform: translateX(5px); }
                 @media (max-width: 991px) {
                     [style*="gridTemplateColumns: 1.5fr 1fr 1fr 1.2fr"] { 
                         grid-template-columns: 1fr 1fr !important;

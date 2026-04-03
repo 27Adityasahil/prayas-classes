@@ -28,7 +28,7 @@ const AjayHighlight = () => {
                         <div style={{ marginBottom: '40px' }}>
                             <h3 style={{ fontSize: '1.8rem', fontWeight: '900', color: 'var(--primary)', marginBottom: '8px' }}>Ajay Kumar Singh</h3>
                             <p style={{ color: 'var(--accent-saffron)', fontWeight: '800', fontSize: '1.1rem', marginBottom: '16px' }}>
-                                Founder – MB Books Pvt. Ltd. | Ex-Chief Editor – Arihant
+                                Founder – MB Books Pvt. Ltd.
                             </p>
                             <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: '1.8', marginBottom: '24px' }}>
                                 With over 20 years of experience, Ajay Kumar Singh has guided thousands of students towards success in SSC, Banking, NDA, CDS, and other competitive exams.

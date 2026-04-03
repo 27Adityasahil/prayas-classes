@@ -6,7 +6,7 @@ import { Phone, MessageCircle, MapPin, Clock, Award, Globe, Send, User, CheckCir
 const ContactPage = () => {
     return (
         <div style={{ backgroundColor: 'white', overflowX: 'hidden' }}>
-            <SEO 
+            <SEO
                 title="Contact Prayas Classes | Best SSC Coaching in Patna"
                 description="Visit Prayas Classes in Patna or contact us for SSC, Banking & government exam coaching. Located in Boring Road. Call or WhatsApp now."
             />
@@ -171,7 +171,7 @@ const ContactPage = () => {
                         }}
                     >
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.5255306691763!2d85.12239637618991!3d25.613398914441584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58ed93323055%3A0xc319bcc19a9a5a3a!2sBoring%20Rd%2C%20Patna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1711900000000!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.747761862985!2d85.11443177543845!3d25.61329667744549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5900080d2291%3A0xd31355c3a3758ea7!2sPrayas%20Classes(BANKING%2FSSC%20%26%20OTHERS)!5e0!3m2!1sen!2sin!4v1775199157586!5m2!1sen!2sin"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}
