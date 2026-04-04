@@ -29,6 +29,11 @@ const RecentResultsBanner = () => {
                     />
                 </motion.div>
             </div>
+            <style>{`
+                @media (max-width: 640px) {
+                    [style*="border: 8px solid white"] { border-width: 4px !important; }
+                }
+            `}</style>
         </section>
     );
 };

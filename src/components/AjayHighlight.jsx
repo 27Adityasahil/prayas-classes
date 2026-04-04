@@ -7,7 +7,7 @@ const AjayHighlight = () => {
     return (
         <section className="section-padding bg-mandala" style={{ backgroundColor: 'white', position: 'relative', overflow: 'hidden' }}>
             <div className="container">
-                <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.2fr) minmax(0, 1fr)', gap: '80px', alignItems: 'center' }}>
+                <div className="ajay-grid-container" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.2fr) minmax(0, 1fr)', gap: '80px', alignItems: 'center' }}>
 
                     {/* Left: Content */}
                     <motion.div
@@ -123,7 +123,11 @@ const AjayHighlight = () => {
 
             <style>{`
                 @media (max-width: 991px) {
-                    div[style*="gridTemplateColumns"] { grid-template-columns: 1fr !important; gap: 60px !important; }
+                    .ajay-grid-container {
+                        display: flex !important;
+                        flex-direction: column-reverse !important;
+                        gap: 60px !important;
+                    }
                     h2 { font-size: 2.25rem !important; }
                     .btn { width: 100%; justify-content: center; }
                 }

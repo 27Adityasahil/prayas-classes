@@ -75,13 +75,26 @@ const Footer = () => {
                 <MessageCircle size={20} color="var(--accent-gold)" style={{ flexShrink: 0 }} />
                 <a href="https://wa.me/919973595162" style={{ color: 'white', textDecoration: 'none', fontWeight: '700' }}>WhatsApp Support</a>
               </div>
+              <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+                <Mail size={20} color="var(--accent-gold)" style={{ flexShrink: 0 }} />
+                <a href="mailto:prayasclassespatna@gmail.com" style={{ color: 'rgba(255, 255, 255, 0.6)', textDecoration: 'none', fontSize: '0.9rem' }}>prayasclasses@gmail.com</a>
+              </div>
             </div>
           </div>
 
         </div>
 
         {/* Bottom Bar */}
-        <div style={{ padding: '40px 0 0', borderTop: '1px solid rgba(255, 255, 255, 0.05)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: 'rgba(255, 255, 255, 0.4)', fontSize: '0.8rem' }}>
+        <div className="footer-bottom" style={{
+          padding: '40px 0 0',
+          borderTop: '1px solid rgba(255, 255, 255, 0.05)',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          gap: '20px',
+          color: 'rgba(255, 255, 255, 0.4)',
+          fontSize: '0.85rem'
+        }}>
           <p>© 2024 Prayas Classes Patna. All Rights Reserved.</p>
           <p>Designed and Developed by <a href="https://brandorbitt.in" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255, 255, 255, 0.6)', fontWeight: '700', textDecoration: 'none' }}>BrandOrbit</a></p>
         </div>
@@ -89,17 +102,27 @@ const Footer = () => {
 
       <style>{`
                 footer a:hover { color: white !important; transform: translateX(5px); }
+                @media (max-width: 1024px) {
+                    [style*="gridTemplateColumns: 1.5fr 1fr 1fr 1.2fr"] { 
+                        gap: 30px !important;
+                    }
+                }
                 @media (max-width: 991px) {
                     [style*="gridTemplateColumns: 1.5fr 1fr 1fr 1.2fr"] { 
                         grid-template-columns: 1fr 1fr !important;
-                        gap: 48px !important;
+                        gap: 40px !important;
                     }
+                    .footer-bottom {
+                        flex-direction: column !important;
+                        text-align: center !important;
+                        gap: 16px !important;
+                    }
+                    footer { padding: 80px 0 120px !important; }
                 }
                 @media (max-width: 640px) {
                     [style*="gridTemplateColumns: 1fr 1fr"] { 
                         grid-template-columns: 1fr !important;
                     }
-                    footer { padding: 80px 0 40px !important; }
                 }
             `}</style>
     </footer>

@@ -36,17 +36,17 @@ const Preloader = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            style={{ marginBottom: '32px' }}
+            style={{ marginBottom: '24px' }}
           >
             <div style={{
-              width: '120px',
-              height: '120px',
+              width: 'clamp(80px, 20vw, 120px)',
+              height: 'clamp(80px, 20vw, 120px)',
               backgroundColor: 'white',
-              borderRadius: '30px',
+              borderRadius: '24px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              padding: '10px',
+              padding: '12px',
               boxShadow: 'var(--shadow-xl)',
               overflow: 'hidden'
             }}>
@@ -58,27 +58,27 @@ const Preloader = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            style={{ textAlign: 'center' }}
+            style={{ textAlign: 'center', padding: '0 20px' }}
           >
             <h2 style={{
-              fontSize: '1.25rem',
-              fontWeight: '700',
-              color: 'var(--text-main)',
+              fontSize: 'clamp(1.2rem, 5vw, 1.5rem)',
+              fontWeight: '800',
+              color: 'var(--primary)',
               letterSpacing: '0.05em',
               textTransform: 'uppercase',
-              marginBottom: '8px'
+              marginBottom: '4px'
             }}>
               Prayas Classes
             </h2>
-            <p style={{ color: 'var(--primary)', fontWeight: '600', fontSize: '0.9rem', letterSpacing: '0.02em' }}>Preparing Future Officers</p>
+            <p style={{ color: 'var(--text-muted)', fontWeight: '700', fontSize: 'clamp(0.8rem, 3vw, 0.9rem)', letterSpacing: '0.02em', opacity: 0.8 }}>Preparing Future Officers</p>
           </motion.div>
 
           {/* Progress Bar */}
           <div style={{
-            width: '200px',
-            height: '4px',
+            width: 'min(200px, 60%)',
+            height: '3px',
             backgroundColor: 'var(--surface-muted)',
-            borderRadius: '2px',
+            borderRadius: '10px',
             marginTop: '32px',
             overflow: 'hidden',
             position: 'relative'

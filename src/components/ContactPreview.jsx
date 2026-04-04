@@ -6,7 +6,7 @@ const ContactPreview = () => {
     return (
         <section className="section-padding" style={{ backgroundColor: 'var(--surface)' }}>
             <div className="container">
-                <div className="grid-cols-2" style={{ gap: '80px', alignItems: 'center' }}>
+                <div className="contact-grid-container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
 
                     {/* Left: Info */}
                     <motion.div
@@ -90,7 +90,11 @@ const ContactPreview = () => {
 
             <style>{`
                 @media (max-width: 991px) {
-                    .grid-cols-2 { grid-template-columns: 1fr !important; gap: 60px !important; }
+                    .contact-grid-container {
+                        display: flex !important;
+                        flex-direction: column-reverse !important;
+                        gap: 60px !important;
+                    }
                 }
             `}</style>
         </section>

@@ -37,7 +37,7 @@ const Header = () => {
                 <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <div style={{ display: 'flex', gap: '32px', alignItems: 'center' }}>
                         <span style={{ display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.9 }}>
-                            <Award size={14} /> ADMISSIONS OPEN 2024-25
+                            <Award size={14} /> ADMISSIONS OPEN 2026-27
                         </span>
                         <span className="hide-mobile" style={{ display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.9 }}>
                             <Globe size={14} /> PATNA'S MOST TRUSTED FACULTY

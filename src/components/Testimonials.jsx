@@ -47,14 +47,13 @@ const Testimonials = () => {
                         }}
                         style={{
                             display: 'flex',
-                            gap: '32px',
                             width: 'max-content'
                         }}
-                        whileHover={{ scale: 1 }} // Placeholder to stop if needed, but linear x animation is best left running or using a state.
                     >
                         {[...reviews, ...reviews].map((review, i) => (
                             <div
                                 key={i}
+                                className="testimonial-card"
                                 style={{
                                     width: '400px',
                                     padding: '40px',
@@ -65,7 +64,8 @@ const Testimonials = () => {
                                     flexDirection: 'column',
                                     border: '1px solid var(--border-gold)',
                                     boxShadow: '0 10px 30px rgba(0,0,0,0.03)',
-                                    flexShrink: 0
+                                    flexShrink: 0,
+                                    marginRight: '32px'
                                 }}
                             >
                                 <Quote size={40} color="var(--accent-saffron)" opacity={0.1} style={{ position: 'absolute', top: '24px', right: '24px' }} />
@@ -87,6 +87,14 @@ const Testimonials = () => {
                     </motion.div>
                 </div>
             </div>
+            <style>{`
+                @media (max-width: 640px) {
+                    .testimonial-card { 
+                        width: calc(100vw - 64px) !important; 
+                        padding: 24px !important; 
+                    }
+                }
+            `}</style>
         </section>
     );
 };

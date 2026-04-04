@@ -12,7 +12,7 @@ const AboutShort = () => {
     return (
         <section className="section-padding" style={{ backgroundColor: 'white' }}>
             <div className="container">
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '80px', alignItems: 'center' }}>
+                <div className="about-grid-container" style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '80px', alignItems: 'center' }}>
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -46,6 +46,7 @@ const AboutShort = () => {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.1 }}
+                                className="about-images-hide"
                                 style={{ borderRadius: '20px', overflow: 'hidden', height: '240px', boxShadow: 'var(--shadow-md)' }}
                             >
                                 <img src={images[0]} alt="Institute Life" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -55,6 +56,7 @@ const AboutShort = () => {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.2 }}
+                                className="about-images-hide"
                                 style={{ borderRadius: '20px', overflow: 'hidden', height: '180px', boxShadow: 'var(--shadow-md)' }}
                             >
                                 <img src={images[1]} alt="Classroom" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -74,11 +76,16 @@ const AboutShort = () => {
             </div>
             <style>{`
                 @media (max-width: 991px) {
-                    [style*="gridTemplateColumns: 1fr 1.2fr"] {
-                        grid-template-columns: 1fr !important;
-                        gap: 48px !important;
+                    .about-grid-container {
+                        display: flex !important;
+                        flex-direction: column-reverse !important;
+                        gap: 40px !important;
                     }
-                    [style*="height: 440px"] { height: 300px !important; }
+                    [style*="gridTemplateColumns: 1fr 1fr"] {
+                        grid-template-columns: 1fr !important;
+                    }
+                    [style*="height: 440px"] { height: 350px !important; }
+                    .about-images-hide { display: none !important; }
                 }
             `}</style>
         </section>

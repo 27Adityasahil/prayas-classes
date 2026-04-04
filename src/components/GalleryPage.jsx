@@ -29,7 +29,7 @@ const GalleryPage = () => {
 
     return (
         <div style={{ backgroundColor: 'white', overflowX: 'hidden' }}>
-            <SEO 
+            <SEO
                 title="Gallery | Prayas Classes Patna"
                 description="Explore classrooms, faculty, and student life at Prayas Classes, a leading coaching institute in Patna for SSC & Banking."
             />
@@ -154,9 +154,9 @@ const GalleryPage = () => {
                             </div>
 
                             <div style={{ maxWidth: '1000px', margin: '0 auto', borderRadius: '48px', overflow: 'hidden', boxShadow: 'var(--shadow-premium)', border: '1px solid var(--border-light)', backgroundColor: 'black' }}>
-                                <video 
-                                    controls 
-                                    playsInline 
+                                <video
+                                    controls
+                                    playsInline
                                     style={{ width: '100%', display: 'block', aspectRatio: '16/9', objectFit: 'cover' }}
                                 >
                                     <source src="/assets/videos/vid-1.mp4" type="video/mp4" />
@@ -171,7 +171,7 @@ const GalleryPage = () => {
             {/* 4. VISUAL FLOW BREAK */}
             <section className="section-padding" style={{ backgroundColor: 'var(--primary)', color: 'white' }}>
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '80px', alignItems: 'center' }}>
+                    <div className="grid-cols-2" style={{ gap: '80px', alignItems: 'center', display: 'grid' }}>
                         <div>
                             <h2 style={{ fontSize: '3rem', fontWeight: '900', marginBottom: '24px' }}>A focused environment for <span style={{ color: 'var(--accent-gold)' }}>serious aspirants</span></h2>
                             <p style={{ fontSize: '1.15rem', opacity: 0.7, lineHeight: '1.8', marginBottom: '32px' }}>

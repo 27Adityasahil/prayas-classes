@@ -424,7 +424,7 @@ const AboutPage = () => {
                             </p>
 
                             {/* Authority Block Grid */}
-                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginBottom: '40px' }}>
+                            <div className="grid-cols-2" style={{ gap: '24px', marginBottom: '40px', display: 'grid' }}>
                                 {[
                                     { icon: <BookOpen />, title: '200+', label: 'Books Authored' },
                                     { icon: <Users />, title: '50k+', label: 'Student Selections' },

@@ -36,7 +36,7 @@ const CoursesPage = () => {
 
     return (
         <div style={{ backgroundColor: 'white', overflowX: 'hidden' }}>
-            <SEO 
+            <SEO
                 title="SSC, Banking & Railway Coaching in Patna | Prayas Classes"
                 description="Join structured coaching for SSC, Banking, Railway & other exams at Prayas Classes, Patna. Expert faculty, mock tests & guidance."
             />
@@ -227,10 +227,10 @@ const CoursesPage = () => {
                             <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: '1.8', marginBottom: '32px' }}>
                                 A complete <strong>banking preparation program in Patna</strong> focused on building strong fundamentals, improving speed and accuracy for IBPS and SBI exams.
                             </p>
-                            
+
                             <div style={{ marginBottom: '40px' }}>
                                 <h4 style={{ fontSize: '1.1rem', fontWeight: '800', color: 'var(--primary)', marginBottom: '16px' }}>What You'll Get:</h4>
-                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                                <div className="grid-cols-2" style={{ gap: '16px', display: 'grid' }}>
                                     {[
                                         'Concept-based classes',
                                         'Practice sessions',
@@ -286,7 +286,7 @@ const CoursesPage = () => {
                             viewport={{ once: true }}
                             style={{ order: window.innerWidth < 991 ? 2 : 1 }}
                         >
-                             <div style={{ borderRadius: '40px', overflow: 'hidden', boxShadow: 'var(--shadow-premium)', aspectRatio: '1/1' }}>
+                            <div style={{ borderRadius: '40px', overflow: 'hidden', boxShadow: 'var(--shadow-premium)', aspectRatio: '1/1' }}>
                                 <img src="/assets/pictures/webp/g-18.webp" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                         </motion.div>
@@ -302,8 +302,8 @@ const CoursesPage = () => {
                             <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: '1.8', marginBottom: '32px' }}>
                                 The <strong>best SSC coaching in Patna</strong> designed to help students master concepts and perform well in CGL and CHSL exams through structured learning.
                             </p>
-                            
-                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '40px' }}>
+
+                            <div className="grid-cols-2" style={{ gap: '20px', marginBottom: '40px', display: 'grid' }}>
                                 {[
                                     { title: 'Complete Syllabus', icon: <BookOpen size={20} /> },
                                     { title: 'Shortcut Techniques', icon: <Zap size={20} /> },
@@ -337,10 +337,10 @@ const CoursesPage = () => {
             {/* 5. RAILWAY / DAROGA / OTHER EXAMS */}
             <section ref={railwayRef} className="section-padding" style={{ backgroundColor: 'var(--accent-warm)' }}>
                 <div className="container">
-                    <div style={{ 
-                        backgroundColor: 'white', 
-                        borderRadius: '40px', 
-                        padding: '60px', 
+                    <div style={{
+                        backgroundColor: 'white',
+                        borderRadius: '40px',
+                        padding: '60px',
                         boxShadow: 'var(--shadow-premium)',
                         border: '1px solid var(--border-light)'
                     }}>
@@ -432,7 +432,7 @@ const CoursesPage = () => {
             <section className="section-padding" style={{ backgroundColor: 'var(--primary)', color: 'white', position: 'relative', overflow: 'hidden' }}>
                 {/* Decorative background shapes */}
                 <div style={{ position: 'absolute', top: '-100px', right: '-100px', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(201, 162, 39, 0.1) 0%, transparent 70%)' }}></div>
-                
+
                 <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                     <div style={{ textAlign: 'center', marginBottom: '80px' }}>
                         <h2 style={{ fontSize: '3rem', fontWeight: '900', marginBottom: '16px' }}>Our <span style={{ color: 'var(--accent-gold)' }}>Teaching Approach</span></h2>
@@ -493,7 +493,7 @@ const CoursesPage = () => {
                                 ))}
                             </div>
                         </div>
-                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
+                        <div className="grid-cols-2" style={{ gap: '24px', display: 'grid' }}>
                             {[
                                 { val: '15+', label: 'Years of Legacy', color: 'var(--primary)' },
                                 { val: '5k+', label: 'Successful Selections', color: 'var(--accent-saffron)' },
@@ -614,7 +614,7 @@ const CoursesPage = () => {
                         }}
                     >
                         <div style={{ position: 'absolute', top: '-50%', left: '-20%', width: '600px', height: '600px', background: 'radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%)' }}></div>
-                        
+
                         <div style={{ position: 'relative', zIndex: 1 }}>
                             <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: '900', marginBottom: '24px', lineHeight: '1.1' }}>
                                 Choose the Right Course and <br />Start Preparing Today

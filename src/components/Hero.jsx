@@ -140,11 +140,11 @@ const Hero = () => {
                             aspectRatio: '4/5',
                             backgroundColor: 'black'
                         }}>
-                            <video 
-                                autoPlay 
-                                loop 
-                                muted 
-                                playsInline 
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
                                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             >
                                 <source src="/assets/videos/vid-1.webm" type="video/webm" />
@@ -153,6 +153,7 @@ const Hero = () => {
                             </video>
                             {/* Floating Stats Card */}
                             <motion.div
+                                className="stats-card"
                                 animate={{ y: [0, -10, 0] }}
                                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                                 style={{
@@ -196,9 +197,13 @@ const Hero = () => {
 
             <style>{`
                 @media (max-width: 991px) {
-                    .grid-cols-2 { grid-template-columns: 1fr !important; }
-                    section { padding: 80px 0 60px !important; }
-                    h1 { font-size: 2.8rem !important; margin-bottom: 24px !important; }
+                    .grid-cols-2 { grid-template-columns: 1fr !important; gap: 40px !important; }
+                    section { padding: 60px 0 40px !important; }
+                    h1 { font-size: 2.5rem !important; margin-bottom: 20px !important; }
+                    .stats-card { display: none !important; }
+                }
+                @media (max-width: 480px) {
+                    h1 { font-size: 2rem !important; }
                 }
             `}</style>
         </section>
