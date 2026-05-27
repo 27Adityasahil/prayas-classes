@@ -110,7 +110,7 @@ const BlogPostPage = () => {
                             <span style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: '600' }}><Clock size={14} /> {post.readTime}</span>
                         </div>
 
-                        <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: '900', color: 'var(--primary)', lineHeight: '1.1', letterSpacing: '-0.04em', marginBottom: '32px' }}>
+                        <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: '900', color: 'var(--primary)', lineHeight: '1.1', letterSpacing: '-0.04em', marginBottom: '32px', wordBreak: 'break-word' }}>
                             {post.title.split('|')[0].trim()}
                         </h1>
 
@@ -151,15 +151,15 @@ const BlogPostPage = () => {
 
             {/* Content Body */}
             <article className="container" style={{ paddingBottom: '120px' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '80px', maxWidth: '1200px', margin: '0 auto' }}>
+                <div className="blog-content-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '80px', maxWidth: '1200px', margin: '0 auto' }}>
                     
                     {/* Main Content */}
-                    <div>
+                    <div style={{ wordBreak: 'break-word', overflowWrap: 'break-word' }}>
                         {post.content.map((item, i) => renderContent(item, i))}
                         
                         {/* Author Bio Footer */}
-                        <div style={{ marginTop: '80px', padding: '48px', backgroundColor: 'var(--surface)', borderRadius: '32px', border: '1px solid var(--border-light)' }}>
-                            <div style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
+                        <div className="author-bio-card" style={{ marginTop: '80px', padding: '48px', backgroundColor: 'var(--surface)', borderRadius: '32px', border: '1px solid var(--border-light)' }}>
+                            <div className="author-bio-container" style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
                                 <div style={{ width: '80px', height: '80px', borderRadius: '50%', backgroundColor: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)', border: '1px solid var(--border-gold)', flexShrink: 0 }}>
                                     <User size={40} />
                                 </div>
@@ -201,9 +201,18 @@ const BlogPostPage = () => {
 
             <style>{`
                 @media (max-width: 991px) {
-                    [style*="gridTemplateColumns: 1fr 300px"] { grid-template-columns: 1fr !important; }
+                    .blog-content-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
                     .hide-mobile { display: none !important; }
                     header { padding: 120px 0 60px !important; }
+                }
+                @media (max-width: 768px) {
+                    .author-bio-card {
+                        padding: 32px 24px !important;
+                    }
+                    .author-bio-container {
+                        flex-direction: column !important;
+                        text-align: center !important;
+                    }
                 }
             `}</style>
         </div>
