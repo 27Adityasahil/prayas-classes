@@ -82,6 +82,29 @@ const BlogPostPage = () => {
                         {item.text}
                     </Link>
                 );
+            case 'table':
+                return (
+                    <div key={index} style={{ overflowX: 'auto', marginBottom: '32px' }}>
+                        <table style={{ width: '100%', borderCollapse: 'collapse', backgroundColor: 'white', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)' }}>
+                            <thead style={{ backgroundColor: 'var(--primary)', color: 'white' }}>
+                                <tr>
+                                    {item.headers.map((th, i) => (
+                                        <th key={i} style={{ padding: '16px', textAlign: 'left', fontWeight: '800', fontSize: '1.1rem' }}>{th}</th>
+                                    ))}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {item.rows.map((row, i) => (
+                                    <tr key={i} style={{ borderBottom: i !== item.rows.length - 1 ? '1px solid var(--border-light)' : 'none', backgroundColor: i % 2 === 0 ? 'white' : 'var(--surface)' }}>
+                                        {row.map((td, j) => (
+                                            <td key={j} style={{ padding: '16px', color: 'var(--text-main)', fontSize: '1.05rem' }}>{td}</td>
+                                        ))}
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                );
             default:
                 return null;
         }

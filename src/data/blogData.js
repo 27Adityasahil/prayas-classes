@@ -839,5 +839,254 @@ export const blogData = [
                 text: "Students should attempt regular sectional tests and at least 20–30 full-length mock tests before the exam for better performance analysis and confidence building."
             }
         ]
+    },
+    {
+        slug: "ssc-cgl-2026-notification-explained",
+        title: "SSC CGL 2026 Notification PDF Out | Exam Date, Eligibility, Vacancy & Syllabus",
+        metaDescription: "SSC CGL 2026 notification released. Check important dates, eligibility, vacancies, syllabus, exam pattern, age limit, application process and preparation tips for SSC CGL 2026.",
+        publishedDate: "May 28, 2026",
+        author: "Prayas Classes",
+        category: "Exam Guide",
+        readTime: "7 min read",
+        image: "https://images.unsplash.com/photo-1558021211-6d1403321394?auto=format&fit=crop&q=80&w=1200",
+        content: [
+            { type: "h1", text: "SSC CGL 2026 Notification Explained – Complete Guide for Aspirants" },
+            { type: "p", text: "The Staff Selection Commission (SSC) has officially released the SSC CGL 2026 Notification for recruitment to various Group B and Group C posts in central government departments and ministries." },
+            { type: "p", text: "Every year lakhs of aspirants apply for SSC CGL because it offers:" },
+            { type: "list", items: [
+                "Stable government jobs",
+                "Good salary packages",
+                "Promotion opportunities",
+                "Job security",
+                "Central government benefits"
+            ] },
+            { type: "p", text: "Students preparing for SSC exams should carefully understand the latest notification before starting preparation." },
+            { type: "p", text: "In this article, we will explain:" },
+            { type: "list", items: [
+                "SSC CGL 2026 important dates",
+                "Eligibility criteria",
+                "Age limit",
+                "Vacancy details",
+                "Exam pattern",
+                "Syllabus",
+                "Application process",
+                "Preparation strategy"
+            ] },
+            { type: "h2", text: "SSC CGL 2026 Important Dates" },
+            { type: "p", text: "According to the official notification, the important dates are as follows:" },
+            { type: "table", headers: ["Event", "Date"], rows: [
+                ["Application Start Date", "21 May 2026"],
+                ["Last Date to Apply", "22 June 2026"],
+                ["Last Date for Fee Payment", "23 June 2026"],
+                ["Application Correction Window", "29 June – 1 July 2026"],
+                ["Tier 1 Exam", "August–September 2026"],
+                ["Tier 2 Exam", "December 2026"]
+            ] },
+            { type: "p", text: "Students should complete applications early to avoid last-minute website traffic issues." },
+            { type: "h2", text: "SSC CGL 2026 Vacancy Details" },
+            { type: "p", text: "SSC has announced approximately 12,256 vacancies for SSC CGL 2026." },
+            { type: "p", text: "These vacancies are available across various ministries and departments of the Government of India." },
+            { type: "p", text: "Some major posts include:" },
+            { type: "list", items: [
+                "Assistant Section Officer",
+                "Inspector of Income Tax",
+                "Inspector (Central Excise)",
+                "Assistant Enforcement Officer",
+                "Sub Inspector (CBI)",
+                "Junior Statistical Officer",
+                "Auditor",
+                "Accountant",
+                "Tax Assistant",
+                "Postal Assistant"
+            ] },
+            { type: "p", text: "The final number of vacancies may change after updates from departments." },
+            { type: "h2", text: "SSC CGL 2026 Eligibility Criteria" },
+            { type: "h3", text: "Educational Qualification" },
+            { type: "p", text: "Candidates must possess a Bachelor’s Degree from a recognized university." },
+            { type: "p", text: "For specific posts:" },
+            { type: "list", items: [
+                "Junior Statistical Officer requires Mathematics or Statistics qualification.",
+                "Statistical Investigator Grade-II requires Statistics/Economics/Mathematics related qualifications."
+            ] },
+            { type: "p", text: "Final year students can also apply if they complete graduation before the cutoff date." },
+            { type: "h2", text: "SSC CGL 2026 Age Limit" },
+            { type: "p", text: "The age limit depends on the post." },
+            { type: "table", headers: ["Post Category", "Age Limit"], rows: [
+                ["18–27 Years", "Most Group C Posts"],
+                ["20–30 Years", "Inspector/Officer Posts"],
+                ["18–30 Years", "Several Group B Posts"],
+                ["18–32 Years", "JSO Post"]
+            ] },
+            { type: "h2", text: "SSC CGL 2026 Age Relaxation" },
+            { type: "p", text: "SSC provides age relaxation as per government rules." },
+            { type: "table", headers: ["Category", "Relaxation"], rows: [
+                ["OBC", "3 Years"],
+                ["SC/ST", "5 Years"],
+                ["PwBD", "10 Years"],
+                ["PwBD + OBC", "13 Years"],
+                ["PwBD + SC/ST", "15 Years"]
+            ] },
+            { type: "h2", text: "SSC CGL 2026 Application Fee" },
+            { type: "p", text: "The application fee for SSC CGL 2026 is ₹100." },
+            { type: "p", text: "Fee exemption is available for:" },
+            { type: "list", items: [
+                "Female candidates",
+                "SC candidates",
+                "ST candidates",
+                "PwBD candidates",
+                "Ex-Servicemen"
+            ] },
+            { type: "h2", text: "SSC CGL 2026 Exam Pattern" },
+            { type: "p", text: "SSC CGL examination is conducted in two tiers." },
+            { type: "h2", text: "Tier 1 Exam Pattern" },
+            { type: "table", headers: ["Subject", "Questions", "Marks"], rows: [
+                ["General Intelligence & Reasoning", "25", "50"],
+                ["General Awareness", "25", "50"],
+                ["Quantitative Aptitude", "25", "50"],
+                ["English Comprehension", "25", "50"],
+                ["Total", "100", "200"]
+            ] },
+            { type: "p", text: "Time Duration:" },
+            { type: "list", items: ["60 Minutes"] },
+            { type: "p", text: "Negative Marking:" },
+            { type: "list", items: ["0.50 marks for every wrong answer."] },
+            { type: "h2", text: "Tier 2 Exam Pattern" },
+            { type: "p", text: "Tier 2 includes:" },
+            { type: "list", items: [
+                "Mathematical Abilities",
+                "Reasoning",
+                "English",
+                "General Awareness",
+                "Computer Knowledge Test",
+                "Data Entry Speed Test"
+            ] },
+            { type: "p", text: "Certain posts also require:" },
+            { type: "list", items: [
+                "Statistics Paper",
+                "Finance & Economics Paper"
+            ] },
+            { type: "h2", text: "SSC CGL 2026 Syllabus" },
+            { type: "h3", text: "Reasoning Topics" },
+            { type: "list", items: [
+                "Coding-Decoding",
+                "Series",
+                "Analogy",
+                "Syllogism",
+                "Non-Verbal Reasoning",
+                "Blood Relations"
+            ] },
+            { type: "h3", text: "Quantitative Aptitude Topics" },
+            { type: "list", items: [
+                "Percentage",
+                "Ratio & Proportion",
+                "Profit & Loss",
+                "Algebra",
+                "Geometry",
+                "Trigonometry",
+                "Data Interpretation"
+            ] },
+            { type: "h3", text: "English Topics" },
+            { type: "list", items: [
+                "Reading Comprehension",
+                "Cloze Test",
+                "Error Detection",
+                "Vocabulary",
+                "Sentence Improvement"
+            ] },
+            { type: "h3", text: "General Awareness Topics" },
+            { type: "list", items: [
+                "Current Affairs",
+                "History",
+                "Polity",
+                "Geography",
+                "Science",
+                "Economy"
+            ] },
+            { type: "h2", text: "SSC CGL 2026 Selection Process" },
+            { type: "p", text: "The selection process includes:" },
+            { type: "list", items: [
+                "1. Tier 1 Examination",
+                "2. Tier 2 Examination",
+                "3. Document Verification"
+            ] },
+            { type: "p", text: "For certain posts:" },
+            { type: "list", items: [
+                "DEST (Data Entry Speed Test)",
+                "Computer Proficiency Test",
+                "Physical Standards/Medical Tests may also apply."
+            ] },
+            { type: "h2", text: "How to Apply for SSC CGL 2026" },
+            { type: "p", text: "Candidates can apply online through SSC official website:" },
+            { type: "list", items: ["https://ssc.gov.in"] },
+            { type: "p", text: "Application process:" },
+            { type: "list", items: [
+                "1. Complete One-Time Registration",
+                "2. Fill application form",
+                "3. Upload photograph & signature",
+                "4. Pay fee",
+                "5. Submit final application"
+            ] },
+            { type: "p", text: "Candidates should carefully verify details before final submission." },
+            { type: "h2", text: "Best SSC CGL Preparation Strategy 2026" },
+            { type: "p", text: "SSC preparation requires:" },
+            { type: "list", items: [
+                "Consistency",
+                "Mock test practice",
+                "Time management",
+                "Concept clarity",
+                "Revision"
+            ] },
+            { type: "p", text: "Students should:" },
+            { type: "list", items: [
+                "Solve previous year papers",
+                "Practice sectional tests",
+                "Analyze mock performance",
+                "Focus on high-weightage topics"
+            ] },
+            { type: "h2", text: "Why Coaching Helps in SSC Preparation" },
+            { type: "p", text: "Many students fail not because of lack of hard work, but because of:" },
+            { type: "list", items: [
+                "Wrong strategy",
+                "Lack of guidance",
+                "No mock analysis",
+                "Poor revision planning"
+            ] },
+            { type: "p", text: "A structured coaching environment helps aspirants maintain discipline and improve performance consistently." },
+            { type: "p", text: "At Prayas Classes, Patna, students receive:" },
+            { type: "list", items: [
+                "Experienced faculty guidance",
+                "SSC-focused preparation",
+                "Regular mock tests",
+                "Personal mentoring",
+                "Doubt support",
+                "Updated study material"
+            ] },
+            { type: "p", text: "Courses available for:" },
+            { type: "list", items: [
+                "SSC CGL",
+                "SSC CHSL",
+                "SSC MTS",
+                "Banking Exams",
+                "Railway Exams"
+            ] },
+            { type: "h2", text: "Conclusion" },
+            { type: "p", text: "SSC CGL 2026 is a major opportunity for graduates seeking central government jobs. Aspirants should thoroughly understand the notification, eligibility criteria, exam pattern and syllabus before beginning preparation." },
+            { type: "p", text: "Students who start early with proper strategy and consistent practice generally perform better in the examination." },
+            { type: "h2", text: "Contact Prayas Classes" },
+            { type: "p", text: "📍 Jagdamba Tower, Sahdeo Mahto Marg, Boring Road, Patna – 800001" },
+            { type: "p", text: "📞 9973595162" },
+            { type: "cta", text: "👉 Admissions Open for SSC, Banking & Railway Batches.", link: "http://www.prayasclasses.co.in" },
+            { type: "h2", text: "FAQs" },
+            { type: "h3", text: "What is the last date to apply for SSC CGL 2026?" },
+            { type: "p", text: "The last date to apply online is 22 June 2026." },
+            { type: "h3", text: "How many vacancies are there in SSC CGL 2026?" },
+            { type: "p", text: "SSC has announced approximately 12,256 vacancies." },
+            { type: "h3", text: "Is SSC CGL Tier 1 qualifying?" },
+            { type: "p", text: "Yes, Tier 1 is qualifying in nature." },
+            { type: "h3", text: "What is the qualification for SSC CGL 2026?" },
+            { type: "p", text: "Candidates must have a Bachelor’s Degree from a recognized university." },
+            { type: "h3", text: "Is there negative marking in SSC CGL?" },
+            { type: "p", text: "Yes. Tier 1 has negative marking of 0.50 marks per wrong answer." }
+        ]
     }
 ];

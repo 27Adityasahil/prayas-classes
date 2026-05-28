@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, Globe, Award, ChevronRight, MessageCircle } from 'lucide-react';
+import { Menu, X, Phone, Globe, Award, ChevronRight, MessageCircle, BookOpen } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
@@ -43,7 +43,10 @@ const Header = () => {
                             <Globe size={14} /> PATNA'S MOST TRUSTED FACULTY
                         </span>
                     </div>
-                    <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                        <Link to="/blog" style={{ color: 'var(--accent-saffron)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '4px', whiteSpace: 'nowrap', fontWeight: '900' }}>
+                            <BookOpen size={14} /> BLOG
+                        </Link>
                         <a href="tel:09973595162" style={{ color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px', whiteSpace: 'nowrap' }}>
                             <Phone size={14} /> 99735 95162
                         </a>
